@@ -7,7 +7,9 @@
 #include "InputActionValue.h"
 #include "Camera/CameraComponent.h"
 #include "GameFramework/Character.h"
+#include "GameFramework/SpringArmComponent.h"
 #include "PlayerCharacter.generated.h"
+
 
 UCLASS()
 class HELLOIT_RPG_API APlayerCharacter : public ACharacter
@@ -45,5 +47,8 @@ private:
 
 	UPROPERTY(EditAnywhere)
 	UCameraComponent* Camera;
+
+	UPROPERTY(EditAnywhere)
+	USpringArmComponent* SpringArm;
 
 };
